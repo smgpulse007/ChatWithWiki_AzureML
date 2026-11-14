@@ -1,0 +1,29 @@
+{
+  "recorded_utc": "2026-11-14T07:29:20.206620+00:00",
+  "kind": "animation_rendered_from_actual_command_output",
+  "pillow_version": "13.0.0",
+  "text_hash_normalization": "UTF-8 text with CRLF normalized to LF",
+  "source_sha256": {
+    "wiki_retrieval.py": "420b0059fbbdad9109b8adc4fdb15a86c8f5ce73171d53fc7f73fe3fc82b261a",
+    "get_wiki_url.py": "1377eb1edff8f6e40281461351a23fd8f591a5e747ef4ebe5e16cde99d372476",
+    "search_result_from_url.py": "ea305fb329b99f7c33e8753c6af400c708e499af7594bb4cf845b4cc64f0a791",
+    "process_search_result.py": "a503b0aa892a7af5c94b0174333687406e2b1199c25302226f067f18290cec3f",
+    "promptflow_compat.py": "9c03c8ff8ce866a064ad8452f1b6d4e95a64bf408668e961bc32e92f8b72481b",
+    "demo.py": "175dba9b118d2357adf41a0ed79d977372790d54844f5db058fc3f1d64360bb5",
+    "tests/test_retrieval.py": "70b4276c0fa2d8f9cec329bafde2bd25741816c83d8566efcfe4feaf7f092b28",
+    "augmented_chat.jinja2": "fb368bd85814bee993b648525530b6211532e9d89720fe0a34c2e8b168a845af",
+    "scripts/record_demo.py": "b2f24ca51b49812117d59e9f9f245eb3d5f80357c488a978a33d7c64c9476659"
+  },
+  "commands": [
+    {
+      "command": "python demo.py",
+      "exit_code": 0,
+      "output": "WIKIPEDIA EVIDENCE / OFFLINE DEMO\nSynthetic responses only. No Wikipedia pages or network were accessed.\nFixture titles and IDs do not identify real articles.\n\nSearch + summary calls through the injected fixture transport: 4\nUsable summaries: 1 | Reported failures: 2\n  Ambiguous fixture: Disambiguation page: use a more specific query\n  Unavailable fixture: Synthetic HTTP 503 fixture\n\nContext: 400/400 characters, including citation metadata\nSource ID: S1 | Truncated: True\nUnicode preserved: caf\u00e9, na\u00efve + Japanese text\nError messages were kept outside source text.\n\nLive retrieval: python wiki_retrieval.py \"Marie Curie\" --limit 2\n"
+    },
+    {
+      "command": "python -m unittest discover -s tests",
+      "exit_code": 0,
+      "output": "........................................\n----------------------------------------------------------------------\nRan 40 tests in 0.127s\n\nOK\n"
+    }
+  ]
+}

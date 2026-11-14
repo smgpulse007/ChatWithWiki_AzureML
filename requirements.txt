@@ -1,0 +1,2 @@
+# The retrieval CLI, offline demo, and unittest suite use Python's standard library.
+# Python 3.11+ is tested. Prompt Flow is optional and supplied by your flow runtime.
